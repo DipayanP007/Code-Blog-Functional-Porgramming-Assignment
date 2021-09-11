@@ -7,7 +7,7 @@ object StringModifier extends App {
 
   val text = (text: String) => text
 
-// S1r3
+
   val modifiedText = (textToBeModified: String) =>  {
 
       @tailrec
