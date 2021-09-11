@@ -5,11 +5,7 @@ import scala.annotation.tailrec
 
 object StringModifier extends App {
 
-  val text = () => {
-  val scanner = new Scanner(System.in)
-  val str = scanner.nextLine()
-  str
-  }
+  val text = (text: String) => text
 
 // S1r3
   val modifiedText = (textToBeModified: String) =>  {
@@ -31,9 +27,10 @@ object StringModifier extends App {
 
 
   val reversedText = (text: String) => text.reverse
-print(text())
+  //print(text())
 
-  (new PrintString).printString(modifiedText(text()))
-  (new PrintString).printString(reversedText(text()))
+  (new PrintString).printString(modifiedText(text("Dipayan")))
+
+  (new PrintString).printString(reversedText(text("Knoldus")))
 
 }
